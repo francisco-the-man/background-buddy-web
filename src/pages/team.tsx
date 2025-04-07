@@ -4,11 +4,12 @@ import Footer from '../components/Footer';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import imageLoader from '../utils/imageLoader';
 
 const teamMembers = [
   {
     name: 'Hannah',
-    image: 'public/images/team/hannah.png',
+    image: '/images/team/hannah.png',
     degrees: [
       'B.A Journalism',
       'M.A Data Journalism'
@@ -17,7 +18,7 @@ const teamMembers = [
   },
   {
     name: 'Avery',
-    image: 'public/images/team/avery.png',
+    image: '/images/team/avery.png',
     degrees: [
       'B.S Symbolic Systems',
       'M.S Symbolic Systems'
@@ -26,7 +27,7 @@ const teamMembers = [
   },
   {
     name: 'Lucy',
-    image: 'public/images/team/lucy.png',
+    image: '/images/team/lucy.png',
     degrees: [
       'B.S Computer Science',
       'M.S Computer Science'
@@ -35,7 +36,7 @@ const teamMembers = [
   },
   {
     name: 'Akanshya',
-    image: 'public/images/team/akanshya.png',
+    image: '/images/team/akanshya.png',
     degrees: [
       'B.S Computer Science',
       'M.S Computer Science'
@@ -63,6 +64,7 @@ export default function Team() {
             {teamMembers.map((member) => (
               <div key={member.name} className={styles.teamMember}>
                 <Image 
+                  loader={imageLoader}
                   src={member.image}
                   alt={`${member.name}'s photo`}
                   width={200}
