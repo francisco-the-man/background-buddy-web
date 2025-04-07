@@ -23,7 +23,7 @@ export default function Home() {
           <div className={styles.heroContainer}>
             
               <Image 
-                src="/images/home/Card_top.svg" 
+                src="/background-buddy-web/images/home/Card_top.svg" 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}

@@ -9,9 +9,9 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: 'home', href: '/#home' },
-  { label: 'about', href: '/#about' },
-  { label: 'demo', href: '/#demo' },
+  { label: 'home', href: '/background-buddy-web/#home' },
+  { label: 'about', href: '/background-buddy-web/#about' },
+  { label: 'demo', href: '/background-buddy-web/#demo' },
 ];
 
 const Navbar: React.FC = () => {

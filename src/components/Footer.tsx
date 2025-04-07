@@ -6,10 +6,10 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerLinks}>
-        <Link href="/team" className={styles.footerButton}>
+        <Link href="/background-buddy-web/team" className={styles.footerButton}>
           meet the team
         </Link>
-        <Link href="/contact" className={styles.footerButton}>
+        <Link href="/background-buddy-web/contact" className={styles.footerButton}>
           contact us
         </Link>
       </div>
