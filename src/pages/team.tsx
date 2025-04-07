@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import imageLoader from '../utils/imageLoader';
 
 const teamMembers = [
   {
@@ -64,7 +63,6 @@ export default function Team() {
             {teamMembers.map((member) => (
               <div key={member.name} className={styles.teamMember}>
                 <Image 
-                  loader={imageLoader}
                   src={member.image}
                   alt={`${member.name}'s photo`}
                   width={200}

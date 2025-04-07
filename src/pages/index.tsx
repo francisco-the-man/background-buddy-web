@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {CornerDownRight} from 'react-feather';
-import imageLoader from '../utils/imageLoader';
 
 export default function Home() {
   return (
@@ -24,7 +23,6 @@ export default function Home() {
           <div className={styles.heroContainer}>
             
               <Image 
-                loader={imageLoader}
                 src="/images/home/Card_top.svg" 
                 alt="Background Buddy Diagram" 
                 width={500} 
@@ -32,7 +30,6 @@ export default function Home() {
                 className={styles.heroDiagram}
               />
               <Image 
-                loader={imageLoader}
                 src="/images/home/Card_bottom.svg" 
                 alt="Background Buddy Diagram" 
                 width={500} 
@@ -64,7 +61,6 @@ export default function Home() {
             <div className={styles.builtBySection}>
               <div className={styles.builtByDiagram}>
                 <Image 
-                  loader={imageLoader}
                   src="/images/home/diagram_by_and_for.svg" 
                   alt="Built By Diagram" 
                   width={400} 
@@ -89,7 +85,6 @@ export default function Home() {
             
             <div className={styles.architectureDiagram}>
               <Image 
-                loader={imageLoader}
                 src="/images/home/Architecture.svg" 
                 alt="Architecture Diagram" 
                 width={700} 
@@ -123,7 +118,6 @@ export default function Home() {
             
             <div className={styles.queryDiagram}>
               <Image 
-                loader={imageLoader}
                 src="/images/home/graph_build.svg" 
                 alt="Query Diagram" 
                 width={900} 
