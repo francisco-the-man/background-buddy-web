@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: '/background-buddy-web/',
+  assetPrefix: '/background-buddy-web',
 };
 
 module.exports = nextConfig; 
