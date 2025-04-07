@@ -1,0 +1,220 @@
+.container {
+  min-height: 100vh;
+  font-family: 'DM Mono', monospace;
+  background-color: #202020;
+  color: white;
+}
+
+.main {
+  padding: 0;
+}
+
+.section {
+  min-height: 90vh;
+  padding: 40px 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 10px;
+  min-width: fit-content;
+  width: 55%;
+}
+
+/* Hero Section */
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* About Section */
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.aboutText {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.6;
+  width: 90%;
+}
+
+.builtBySection {
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+.builtByDiagram {
+  margin: 20px 0;
+}
+
+.builtByImage {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.architectureDiagram, .queryDiagram {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.architectureImage, .queryImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutList {
+  font-size: 16px;
+  font-weight: 200;
+  list-style-type: none;
+  padding-left: 20px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.aboutList li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 1px;
+}
+
+.listIcon {
+  color: #ffffff;  /* Match the border color */
+  flex-shrink: 0;
+  margin-bottom: 5px;
+}
+
+/* Demo Section */
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding-bottom: 35%;  /* 16:9 Aspect Ratio */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+}
+
+.demoContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* Footer */
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid #333;
+  margin-top: 60px;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: underline;
+} 
+
+.contactSection {
+  min-height: 75vh; 
+  padding: 20px 3%;  
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 200px);
+}
+
+.contactText {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.textLink {
+  color: #D9D9D9;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.textLink:hover {
+  opacity: 0.8;
+}
+
+.shortMain {
+  min-height: calc(100vh - 300px);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 3%;
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.teamImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.teamName {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.teamDegree {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 200;
+  margin: 2px 0;
+  color: #D9D9D9;
+}

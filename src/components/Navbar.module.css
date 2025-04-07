@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 3%;
+  background-color: rgba(32, 32, 32, 0.8);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'DM Mono', monospace;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navButton {
+  padding: 8px 16px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin: 0 0px;
+}
+
+.navButton:hover {
+  background-color: rgba(217, 217, 217, 0.2);
+}
+
+.navButton.active {
+  background-color: #D9D9D9;
+  color: #202020;
+}
+
+.separator {
+  position: relative;
+  height: 1px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #D9D9D9;
+}
+
+.arrowhead {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #D9D9D9;
+}
+
+.navbarLine {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  width: 94%;
+  height: 1px;
+  background-color: #D9D9D9;
+} 
