@@ -46,7 +46,7 @@ export default function Home() {
           
           <div className={styles.aboutContent}>
             <p className={styles.aboutText}>
-            We’re agroup of Stanford students building Background Buddy: a browser-based tool that surfaces a knowledge graph extracted 
+            We’re a group of Stanford students building Background Buddy: a browser-based tool that surfaces a knowledge graph extracted 
             from newsroom archives. It identifies <u>entities</u> (people, places, laws, organizations) and maps their <u>relationships</u> (WORKS_FOR, VETOED, 
             SUPPORTED_BY, etc.) across time. This turns static archives into a living, queryable network. It builds a system that preserves context 
             and makes it accessible to new journalists through intuitive prompts. Ask a question like: “How is Jacob Frey connected to water security 
