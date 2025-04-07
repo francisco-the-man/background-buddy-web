@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css';
 const teamMembers = [
   {
     name: 'Hannah',
-    image: '/images/team/hannah.png',
+    image: 'public/images/team/hannah.png',
     degrees: [
       'B.A Journalism',
       'M.A Data Journalism'
@@ -17,7 +17,7 @@ const teamMembers = [
   },
   {
     name: 'Avery',
-    image: '/images/team/avery.png',
+    image: 'public/images/team/avery.png',
     degrees: [
       'B.S Symbolic Systems',
       'M.S Symbolic Systems'
@@ -26,7 +26,7 @@ const teamMembers = [
   },
   {
     name: 'Lucy',
-    image: '/images/team/lucy.png',
+    image: 'public/images/team/lucy.png',
     degrees: [
       'B.S Computer Science',
       'M.S Computer Science'
@@ -35,7 +35,7 @@ const teamMembers = [
   },
   {
     name: 'Akanshya',
-    image: '/images/team/akanshya.png',
+    image: 'public/images/team/akanshya.png',
     degrees: [
       'B.S Computer Science',
       'M.S Computer Science'
