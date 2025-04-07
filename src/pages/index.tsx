@@ -23,14 +23,14 @@ export default function Home() {
           <div className={styles.heroContainer}>
             
               <Image 
-                src="/images/home/Card_top.svg" 
+                src="public/images/home/Card_top.svg" 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}
                 className={styles.heroDiagram}
               />
               <Image 
-                src="/images/home/Card_bottom.svg" 
+                src="public/images/home/Card_bottom.svg" 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}
@@ -61,7 +61,7 @@ export default function Home() {
             <div className={styles.builtBySection}>
               <div className={styles.builtByDiagram}>
                 <Image 
-                  src="/images/home/diagram_by_and_for.svg" 
+                  src="public/images/home/diagram_by_and_for.svg" 
                   alt="Built By Diagram" 
                   width={400} 
                   height={200}
@@ -85,7 +85,7 @@ export default function Home() {
             
             <div className={styles.architectureDiagram}>
               <Image 
-                src="/images/home/Architecture.svg" 
+                src="public/images/home/Architecture.svg" 
                 alt="Architecture Diagram" 
                 width={700} 
                 height={400}
@@ -118,7 +118,7 @@ export default function Home() {
             
             <div className={styles.queryDiagram}>
               <Image 
-                src="/images/home/graph_build.svg" 
+                src="public/images/home/graph_build.svg" 
                 alt="Query Diagram" 
                 width={900} 
                 height={400}
