@@ -1,15 +1,25 @@
 /** @type {import('next').NextConfig} */
+
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+
+let assetPrefix = ''
+let basePath = ''
+
+if (isGithubActions) {
+  assetPrefix = '/background-buddy-web'
+  basePath = '/background-buddy-web'
+}
+
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
-  basePath: '/background-buddy-web',
+  assetPrefix: assetPrefix,
+  basePath: basePath,
   images: {
+    loader: 'imgix',
+    path: assetPrefix, 
     unoptimized: true,
   },
-  assetPrefix: '/background-buddy-web',
-  env: {
-    NEXT_PUBLIC_BASE_PATH: '/background-buddy-web',
-  },
-};
+  output: 'export',
+}
 
 module.exports = nextConfig; 
