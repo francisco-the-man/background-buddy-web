@@ -1,22 +1,13 @@
 /** @type {import('next').NextConfig} */
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-
-let assetPrefix = ''
-let basePath = ''
-
-if (isGithubActions) {
-  assetPrefix = '/background-buddy-web'
-  basePath = '/background-buddy-web'
-}
+// Check if we're in production (GitHub Pages deployment)
+const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  assetPrefix: isProd ? '/background-buddy-web' : '',
+  basePath: isProd ? '/background-buddy-web' : '',
   images: {
-    loader: 'imgix',
-    path: assetPrefix, 
     unoptimized: true,
   },
   output: 'export',
