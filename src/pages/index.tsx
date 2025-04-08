@@ -5,8 +5,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {CornerDownRight} from 'react-feather';
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  const router = useRouter();
+  const basePath = router.basePath;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,14 +27,14 @@ export default function Home() {
           <div className={styles.heroContainer}>
             
               <Image 
-                src="/images/home/Card_top.svg" 
+                src={`${basePath}/images/home/Card_top.svg`} 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}
                 className={styles.heroDiagram}
               />
               <Image 
-                src="/images/home/Card_bottom.svg" 
+                src={`${basePath}/images/home/Card_bottom.svg`} 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}
@@ -61,7 +65,7 @@ export default function Home() {
             <div className={styles.builtBySection}>
               <div className={styles.builtByDiagram}>
                 <Image 
-                  src="/images/home/diagram_by_and_for.svg" 
+                  src={`${basePath}/images/home/diagram_by_and_for.svg`} 
                   alt="Built By Diagram" 
                   width={400} 
                   height={200}
@@ -85,7 +89,7 @@ export default function Home() {
             
             <div className={styles.architectureDiagram}>
               <Image 
-                src="/images/home/Architecture.svg" 
+                src={`${basePath}/images/home/Architecture.svg`} 
                 alt="Architecture Diagram" 
                 width={700} 
                 height={400}
@@ -118,7 +122,7 @@ export default function Home() {
             
             <div className={styles.queryDiagram}>
               <Image 
-                src="/images/home/graph_build.svg" 
+                src={`${basePath}/images/home/graph_build.svg`} 
                 alt="Query Diagram" 
                 width={900} 
                 height={400}
