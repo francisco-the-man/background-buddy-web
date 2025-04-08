@@ -7,12 +7,13 @@ import styles from '../styles/Home.module.css';
 import {CornerDownRight} from 'react-feather';
 
 export default function Home() {
+    const basePath = 'https://francisco-the-man.github.io/background-buddy-web'
   return (
     <div className={styles.container}>
       <Head>
         <title>Background Buddy</title>
         <meta name="description" content="A browser-based tool that surfaces a knowledge graph" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
       </Head>
 
       <Navbar />
@@ -23,14 +24,14 @@ export default function Home() {
           <div className={styles.heroContainer}>
             
               <img 
-                src="https://francisco-the-man.github.io/background-buddy-web/images/home/Card_top.svg" 
+                src={`${basePath}/images/home/Card_top.svg`} 
                 alt="Background Buddy Diagram Top" 
                 width={500} 
                 height={300}
                 className={styles.heroDiagram}
               />
               <img 
-                src="https://francisco-the-man.github.io/background-buddy-web/images/home/Card_bottom.svg" 
+                src={`${basePath}/images/home/Card_bottom.svg`} 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}
@@ -61,7 +62,7 @@ export default function Home() {
             <div className={styles.builtBySection}>
               <div className={styles.builtByDiagram}>
                 <img 
-                  src="https://francisco-the-man.github.io/background-buddy-web/images/home/diagram_by_and_for.svg" 
+                  src={`${basePath}/images/home/Diagram_by_and_for.svg`} 
                   alt="Built By Diagram" 
                   width={400} 
                   height={200}
@@ -85,7 +86,7 @@ export default function Home() {
             
             <div className={styles.architectureDiagram}>
               <img 
-                src="https://francisco-the-man.github.io/background-buddy-web/images/home/Architecture.svg" 
+                src={`${basePath}/images/home/Architecture.svg`} 
                 alt="Architecture Diagram" 
                 width={700} 
                 height={400}
@@ -118,7 +119,7 @@ export default function Home() {
             
             <div className={styles.queryDiagram}>
               <img 
-                src="https://francisco-the-man.github.io/background-buddy-web/images/home/graph_build.svg" 
+                src={`${basePath}/images/home/graph_build.svg`} 
                 alt="Query Diagram" 
                 width={900} 
                 height={400}

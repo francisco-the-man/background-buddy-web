@@ -45,12 +45,13 @@ const teamMembers = [
 ];
 
 export default function Team() {
+    const basePath = 'https://francisco-the-man.github.io/background-buddy-web'
   return (
     <div className={styles.container}>
       <Head>
         <title>Background Buddy - Team</title>
         <meta name="description" content="Meet the Background Buddy team" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
       </Head>
 
       <Navbar />
@@ -63,7 +64,7 @@ export default function Team() {
             {teamMembers.map((member) => (
               <div key={member.name} className={styles.teamMember}>
                 <Image 
-                  src={member.image}
+                  src={`${basePath}${member.image}`}
                   alt={`${member.name}'s photo`}
                   width={200}
                   height={200}
