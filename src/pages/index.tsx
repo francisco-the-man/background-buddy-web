@@ -2,12 +2,10 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {CornerDownRight} from 'react-feather';
 
 export default function Home() {
-
   return (
     <div className={styles.container}>
       <Head>
@@ -23,15 +21,15 @@ export default function Home() {
         <section id="home" className={styles.section}>
           <div className={styles.heroContainer}>
             
-              <Image 
-                src={`/background-buddy-web/images/home/Card_top.svg`} 
+              <img 
+                src="/background-buddy-web/images/home/Card_top.svg" 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}
                 className={styles.heroDiagram}
               />
-              <Image 
-                src={`/images/home/Card_bottom.svg`} 
+              <img 
+                src="/background-buddy-web/images/home/Card_bottom.svg" 
                 alt="Background Buddy Diagram" 
                 width={500} 
                 height={300}
@@ -61,8 +59,8 @@ export default function Home() {
             
             <div className={styles.builtBySection}>
               <div className={styles.builtByDiagram}>
-                <Image 
-                  src={`/images/home/diagram_by_and_for.svg`} 
+                <img 
+                  src="/background-buddy-web/images/home/diagram_by_and_for.svg" 
                   alt="Built By Diagram" 
                   width={400} 
                   height={200}
@@ -85,8 +83,8 @@ export default function Home() {
             </p>
             
             <div className={styles.architectureDiagram}>
-              <Image 
-                src={`/images/home/Architecture.svg`} 
+              <img 
+                src="/background-buddy-web/images/home/Architecture.svg" 
                 alt="Architecture Diagram" 
                 width={700} 
                 height={400}
@@ -118,8 +116,8 @@ export default function Home() {
             </p>
             
             <div className={styles.queryDiagram}>
-              <Image 
-                src={`/images/home/graph_build.svg`} 
+              <img 
+                src="/background-buddy-web/images/home/graph_build.svg" 
                 alt="Query Diagram" 
                 width={900} 
                 height={400}
@@ -138,7 +136,7 @@ export default function Home() {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/s7vzvZQmQ80?si=YDnMGPC_e9nzwAOd" // Replace with your YouTube video ID
+                    src="https://www.youtube.com/embed/s7vzvZQmQ80?si=YDnMGPC_e9nzwAOd"
                     title="Background Buddy Demo"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
