@@ -5,11 +5,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {CornerDownRight} from 'react-feather';
-import { useRouter } from 'next/router';
 
 export default function Home() {
-  const router = useRouter();
-  const basePath = router.basePath;
+  const basePath = '/background-buddy-web';
 
   return (
     <div className={styles.container}>
