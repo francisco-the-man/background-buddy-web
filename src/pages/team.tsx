@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
 const teamMembers = [
@@ -63,7 +62,7 @@ export default function Team() {
           <div className={styles.teamGrid}>
             {teamMembers.map((member) => (
               <div key={member.name} className={styles.teamMember}>
-                <Image 
+                <img 
                   src={`${basePath}${member.image}`}
                   alt={`${member.name}'s photo`}
                   width={200}
