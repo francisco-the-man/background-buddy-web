@@ -7,7 +7,8 @@ import styles from '../styles/Home.module.css';
 import {CornerDownRight} from 'react-feather';
 
 export default function Home() {
-  const basePath = '/background-buddy-web';
+  // Use the environment variable from next.config.js
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
     <div className={styles.container}>

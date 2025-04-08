@@ -7,6 +7,9 @@ const nextConfig = {
     unoptimized: true,
   },
   assetPrefix: '/background-buddy-web',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/background-buddy-web',
+  },
 };
 
 module.exports = nextConfig; 
