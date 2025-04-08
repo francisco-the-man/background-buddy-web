@@ -30,13 +30,42 @@ export default function Home() {
                 height={300}
                 className={styles.heroDiagram}
               />
-              <img 
-                src={`${basePath}/images/home/card_bottom.svg`} 
-                alt="Background Buddy Diagram" 
-                width={500} 
-                height={300}
-                className={styles.heroDiagram}
-              />
+              <div style={{ position: 'relative' }}>
+                <img 
+                  src={`${basePath}/images/home/card_bottom.svg`} 
+                  alt="Background Buddy Diagram" 
+                  width={500} 
+                  height={300}
+                  className={styles.heroDiagram}
+                />
+                
+                <a 
+                  href="https://francisco-the-man.github.io/background-buddy-web/contact"
+                  style={{
+                    position: 'absolute',
+                    left: '49px',
+                    top: '250px',
+                    width: '30px',
+                    height: '40px',
+                    zIndex: 10
+                  }}
+                >
+                  
+                </a>
+                
+                <a 
+                  href="https://francisco-the-man.github.io/background-buddy-web/team"
+                  style={{
+                    position: 'absolute',
+                    left: '365px',
+                    top: '250px',
+                    width: '30px',
+                    height: '40px',
+                    zIndex: 10
+                  }}
+                >
+                </a>
+              </div>
             </div>
             
         </section>
@@ -149,6 +178,21 @@ export default function Home() {
         </section>
         <Footer />
       </main>
+
+      <map name="cardMap">
+        <area 
+          shape="rect" 
+          coords="49,279,89,319" 
+          href="https://francisco-the-man.github.io/background-buddy-web/contact" 
+          alt="Contact" 
+        />
+        <area 
+          shape="rect" 
+          coords="431,279,471,319" 
+          href="https://francisco-the-man.github.io/background-buddy-web/team" 
+          alt="Team" 
+        />
+      </map>
     </div>
   );
 } 
