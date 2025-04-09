@@ -23,7 +23,7 @@ export default function Contact() {
                     We'd love to hear from you.
                 </p>
                 <p className={styles.contactText}>
-                    Email us at <a href="mailto:someemail@email.com" className={styles.textLink}>someemail@email.com</a>
+                    Email us at <a href="mailto:averylou@stanford.edu" className={styles.textLink}>averylou@stanford.edu</a>
                 </p>
             </div>
         </section>
