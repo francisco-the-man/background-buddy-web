@@ -6,12 +6,13 @@ import styles from '../styles/Home.module.css';
 
 
 export default function Contact() {
+    const basePath = 'https://francisco-the-man.github.io/background-buddy-web'
   return (
     <div className={styles.container}>
       <Head>
         <title>Background Buddy - Contact</title>
         <meta name="description" content="Contact Background Buddy" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href={`${basePath}/favicon.ico`} />
       </Head>
 
       <Navbar />
