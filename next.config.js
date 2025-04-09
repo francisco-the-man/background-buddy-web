@@ -5,8 +5,6 @@ const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: isProd ? '/background-buddy-web' : '',
-  basePath: isProd ? '/background-buddy-web' : '',
   images: {
     unoptimized: true,
   },
