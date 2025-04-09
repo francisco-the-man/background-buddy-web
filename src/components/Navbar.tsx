@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={styles.navbar}>
-      <Link href="/" className={styles.logo}>Background Buddy</Link>
+      <Link href="/" className={styles.logo}>Subline</Link>
       <div className={styles.navLinks}>
         {navItems.map((item, index) => (
           <React.Fragment key={item.label}>

@@ -10,8 +10,8 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Background Buddy - Contact</title>
-        <meta name="description" content="Contact Background Buddy" />
+        <title>Subline - Contact</title>
+        <meta name="description" content="Contact Subline" />
         <link rel="icon" href={`${basePath}/favicon.ico`} />
       </Head>
 

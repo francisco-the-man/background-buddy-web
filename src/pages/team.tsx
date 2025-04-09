@@ -48,8 +48,8 @@ export default function Team() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Background Buddy - Team</title>
-        <meta name="description" content="Meet the Background Buddy team" />
+        <title>Subline - Team</title>
+        <meta name="description" content="Meet the Subline team" />
         <link rel="icon" href={`${basePath}/favicon.ico`} />
       </Head>
 

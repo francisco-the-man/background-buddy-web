@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Background Buddy</title>
+        <title>Subline</title>
         <meta name="description" content="A browser-based tool that surfaces a knowledge graph" />
         <link rel="icon" href={`${basePath}/favicon.ico`} />
       </Head>
@@ -25,7 +25,7 @@ export default function Home() {
             
               <img 
                 src={`${basePath}/images/home/card_top.svg`} 
-                alt="Background Buddy Diagram Top" 
+                alt="Subline card top" 
                 width={500} 
                 height={300}
                 className={styles.heroDiagram}
@@ -33,14 +33,14 @@ export default function Home() {
               <div style={{ position: 'relative' }}>
                 <img 
                   src={`${basePath}/images/home/card_bottom.svg`} 
-                  alt="Background Buddy Diagram" 
+                  alt="Subline card bottom" 
                   width={500} 
                   height={300}
                   className={styles.heroDiagram}
                 />
                 
                 <a 
-                  href="https://francisco-the-man.github.io/background-buddy-web/contact"
+                  href="https://sub-line.com/contact"
                   style={{
                     position: 'absolute',
                     left: '49px',
@@ -54,7 +54,7 @@ export default function Home() {
                 </a>
                 
                 <a 
-                  href="https://francisco-the-man.github.io/background-buddy-web/team"
+                  href="https://sub-line.com/team"
                   style={{
                     position: 'absolute',
                     left: '365px',
@@ -76,7 +76,7 @@ export default function Home() {
           
           <div className={styles.aboutContent}>
             <p className={styles.aboutText}>
-            We're a group of Stanford students building Background Buddy: a browser-based tool that surfaces a knowledge graph extracted 
+            We're a group of Stanford students building Subline: a browser-based tool that surfaces a knowledge graph extracted 
             from newsroom archives. It identifies <u>entities</u> (people, places, laws, organizations) and maps their <u>relationships</u> (WORKS_FOR, VETOED, 
             SUPPORTED_BY, etc.) across time. This turns static archives into a living, queryable network. It builds a system that preserves context 
             and makes it accessible to new journalists through intuitive prompts. Ask a question like: "How is Jacob Frey connected to water security 
@@ -108,7 +108,7 @@ export default function Home() {
           
           <div className={styles.aboutContent}>
             <p className={styles.aboutText}>
-              Background Buddy is an AI-native data extraction tool. We use Natural Language Processing (NLP) in
+              Subline is an AI-native data extraction tool. We use Natural Language Processing (NLP) in
               combination with AI to extract our knowledge graph. Then, we use machine learning to surface the
               right information to users.
             </p>
@@ -125,7 +125,7 @@ export default function Home() {
             
             <p className={styles.aboutText}>
             One of the core challenges of this project is ensuring the accuracy and trustworthiness of
-             the information that Background Buddy surfaces. In journalism, even minor inaccuracies 
+             the information that Subline surfaces. In journalism, even minor inaccuracies 
              can have significant consequences, so we're taking rigorous steps to put humans in the loop and ensure data integrity.
             </p>
             
@@ -168,7 +168,7 @@ export default function Home() {
                     width="560"
                     height="315"
                     src="https://www.youtube.com/embed/s7vzvZQmQ80?si=YDnMGPC_e9nzwAOd"
-                    title="Background Buddy Demo"
+                    title="Subline Demo"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -183,13 +183,13 @@ export default function Home() {
         <area 
           shape="rect" 
           coords="49,279,89,319" 
-          href="https://francisco-the-man.github.io/background-buddy-web/contact" 
+          href="https://sub-line.com/contact" 
           alt="Contact" 
         />
         <area 
           shape="rect" 
           coords="431,279,471,319" 
-          href="https://francisco-the-man.github.io/background-buddy-web/team" 
+          href="https://sub-line.com/team" 
           alt="Team" 
         />
       </map>
